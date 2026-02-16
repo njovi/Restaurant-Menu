@@ -3,126 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <title>Starlight Slice Pizzeria – Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
-    <h1>Starlight Slice Pizzeria</h1>
-    <p>Handcrafted pizzas baked fresh under the stars ✨</p>
+    <div class="site-header container">
+      <div>
+        <h1>Starlight Slice Pizzeria</h1>
+        <p class="tagline">Handcrafted pizzas baked fresh under the stars ✨</p>
+      </div>
+      <div class="hours">
+        <p>Open: Tue–Sun • 11:00am–10:00pm</p>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section aria-labelledby="menu-heading">
-      <h2 id="menu-heading">Pizza Menu</h2>
+    <section class="container" aria-labelledby="menu-heading">
+      <div class="menu-header">
+        <h2 id="menu-heading">Pizza Menu</h2>
+        <p class="menu-sub">Classic pies & seasonal specialties — available for dine-in or takeaway.</p>
+      </div>
 
-      <ul>
-        <li>
-          <h3>1. Cosmic Margherita</h3>
-          <p><strong>Price:</strong> $12.99</p>
-          <figure>
-            <img src = "IMAGES/CosmicMarg.png" alt = "Cosmic Margherita" />
-          </figure>
-          <p>Fresh mozzarella, crushed San Marzano tomatoes, basil leaves, extra-virgin olive oil.</p>
+      <ul class="menu-grid" role="list">
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/CosmicMarg.png" alt="Cosmic Margherita" loading="lazy">
+            </figure>
+            <div class="item-price">$12.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Cosmic Margherita</h3>
+            <p class="item-desc">Fresh mozzarella, crushed San Marzano tomatoes, basil leaves, extra-virgin olive oil.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>2. Galactic Pepperoni</h3>
-          <p><strong>Price:</strong> $14.49</p>
-          <figure>
-            <img src = "IMAGES/GalaticPepperoni.png" alt = "Galactic Pepperoni" />
-          </figure>
-          <p>Classic tomato sauce, mozzarella cheese, crispy pepperoni slices.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/GalaticPepperoni.png" alt="Galactic Pepperoni" loading="lazy">
+            </figure>
+            <div class="item-price">$14.49</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Galactic Pepperoni</h3>
+            <p class="item-desc">Classic tomato sauce, mozzarella cheese, crispy pepperoni slices.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>3. Orbiting Veggie</h3>
-          <p><strong>Price:</strong> $13.99</p>
-          <figure>
-            <img src = "IMAGES/OrbitingVeggie.png" alt = "Orbiting Veggie" />
-          </figure>
-          <p>Bell peppers, red onions, mushrooms, black olives, mozzarella, tomato sauce.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/OrbitingVeggie.png" alt="Orbiting Veggie" loading="lazy">
+            </figure>
+            <div class="item-price">$13.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Orbiting Veggie</h3>
+            <p class="item-desc">Bell peppers, red onions, mushrooms, black olives, mozzarella, tomato sauce.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>4. Supernova Supreme</h3>
-          <p><strong>Price:</strong> $16.99</p>
-          <figure>
-            <img src = "IMAGES/SuperNove.png" alt = "Supernove Supreme" />
-          </figure>
-          <p>Pepperoni, sausage, green peppers, onions, mushrooms, mozzarella, tomato sauce.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/SuperNove.png" alt="Supernova Supreme" loading="lazy">
+            </figure>
+            <div class="item-price">$16.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Supernova Supreme</h3>
+            <p class="item-desc">Pepperoni, sausage, green peppers, onions, mushrooms, mozzarella, tomato sauce.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>5. Solar BBQ Chicken</h3>
-          <p><strong>Price:</strong> $15.99</p>
-          <figure>
-            <img src = "IMAGES/ChickenBBQ.png" alt = "Solar BBQ Chicken" />
-          </figure>
-          <p>Grilled chicken, smoky BBQ sauce, red onions, cilantro, mozzarella.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/ChickenBBQ.png" alt="Solar BBQ Chicken" loading="lazy">
+            </figure>
+            <div class="item-price">$15.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Solar BBQ Chicken</h3>
+            <p class="item-desc">Grilled chicken, smoky BBQ sauce, red onions, cilantro, mozzarella.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>6. Lunar White Pizza</h3>
-          <p><strong>Price:</strong> $14.99</p>
-          <figure>
-            <img src = "IMAGES/Parman.png" alt = "Lunar White Pizza" />
-          </figure>
-          <p>Garlic olive oil base, ricotta, mozzarella, parmesan, fresh spinach.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/Parman.png" alt="Lunar White Pizza" loading="lazy">
+            </figure>
+            <div class="item-price">$14.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Lunar White Pizza</h3>
+            <p class="item-desc">Garlic olive oil base, ricotta, mozzarella, parmesan, fresh spinach.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>7. Meteor Meat Lovers</h3>
-          <p><strong>Price:</strong> $17.49</p>
-          <figure>
-            <img src = "IMAGES/MeatLovers.png" alt = "Meteor Meat Lovers" />
-          </figure>
-          <p>Pepperoni, sausage, bacon, ham, mozzarella, tomato sauce.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/MeatLovers.png" alt="Meteor Meat Lovers" loading="lazy">
+            </figure>
+            <div class="item-price">$17.49</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Meteor Meat Lovers</h3>
+            <p class="item-desc">Pepperoni, sausage, bacon, ham, mozzarella, tomato sauce.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>8. Saturn Pesto Delight</h3>
-          <p><strong>Price:</strong> $15.49</p>
-          <figure>
-            <img src = "IMAGES/Pesto.png" alt = "Saturn Sun Pesto" />
-          </figure>
-          <p>Basil pesto sauce, cherry tomatoes, fresh mozzarella, parmesan.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/Pesto.png" alt="Saturn Pesto Delight" loading="lazy">
+            </figure>
+            <div class="item-price">$15.49</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Saturn Pesto Delight</h3>
+            <p class="item-desc">Basil pesto sauce, cherry tomatoes, fresh mozzarella, parmesan.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>9. Nebula Mushroom Truffle</h3>
-          <p><strong>Price:</strong> $16.49</p>
-          <figure>
-            <img src = "IMAGES/TruffleMushroom.png" alt = "Nebula Mushroom Truffle" />
-          </figure>
-          <p>Sautéed mushrooms, truffle oil, mozzarella, parmesan, garlic.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/TruffleMushroom.png" alt="Nebula Mushroom Truffle" loading="lazy">
+            </figure>
+            <div class="item-price">$16.49</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Nebula Mushroom Truffle</h3>
+            <p class="item-desc">Sautéed mushrooms, truffle oil, mozzarella, parmesan, garlic.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>10. Comet Hawaiian</h3>
-          <p><strong>Price:</strong> $14.99</p>
-          <figure>
-            <img src = "IMAGES/Hawaii.png" alt = "Comet Hawaii" />
-          </figure>
-          <p>Tomato sauce, mozzarella, sweet pineapple, savory ham.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/Hawaii.png" alt="Comet Hawaiian" loading="lazy">
+            </figure>
+            <div class="item-price">$14.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Comet Hawaiian</h3>
+            <p class="item-desc">Tomato sauce, mozzarella, sweet pineapple, savory ham.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>11. Eclipse Buffalo Chicken</h3>
-          <p><strong>Price:</strong> $15.99</p>
-          <figure>
-            <img src = "IMAGES/EclispeChicken.png" alt = "Eclipse Buffalo Chicken" />
-          </figure>
-          <p>Buffalo sauce, crispy chicken, mozzarella, blue cheese drizzle.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/EclispeChicken.png" alt="Eclipse Buffalo Chicken" loading="lazy">
+            </figure>
+            <div class="item-price">$15.99</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Eclipse Buffalo Chicken</h3>
+            <p class="item-desc">Buffalo sauce, crispy chicken, mozzarella, blue cheese drizzle.</p>
+          </div>
         </li>
 
-        <li>
-          <h3>12. Stardust Vegan</h3>
-          <p><strong>Price:</strong> $15.49</p>
-          <figure>
-            <img src = "IMAGES/fullyvegan.png" alt = "Stardust Vegan" />
-          </figure>
-          <p>Dairy-free cheese, tomato sauce, zucchini, mushrooms, spinach, roasted garlic.</p>
+        <li class="menu-item">
+          <div class="media">
+            <figure class="thumb">
+              <img src="IMAGES/fullyvegan.png" alt="Stardust Vegan" loading="lazy">
+            </figure>
+            <div class="item-price">$15.49</div>
+          </div>
+          <div class="item-body">
+            <h3 class="item-title">Stardust Vegan</h3>
+            <p class="item-desc">Dairy-free cheese, tomato sauce, zucchini, mushrooms, spinach, roasted garlic.</p>
+          </div>
         </li>
       </ul>
     </section>
